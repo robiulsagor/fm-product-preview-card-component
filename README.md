@@ -31,7 +31,8 @@ Users should be able to:
 ### Links
 
 
-- Live Site URL: [Add live site URL here](https://robiulsagor.github.io/fm-product-preview-card-component/)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-product-preview-card-with-sass-3M7Y0FrhE9](https://www.frontendmentor.io/solutions/responsive-product-preview-card-with-sass-3M7Y0FrhE9)
+- Live Site URL: [https://robiulsagor.github.io/fm-product-preview-card-component/](https://robiulsagor.github.io/fm-product-preview-card-component/)
 
 ## My process
 
