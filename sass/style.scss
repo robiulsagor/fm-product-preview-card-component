@@ -68,7 +68,7 @@ $white: hsl(0, 0%, 100%);
           @media screen and (min-width: 768px) {
             & {
               padding: 0 30px;
-              gap: 20px;
+              gap: 25px;
               justify-content: center;
             }
           }
@@ -85,7 +85,6 @@ $white: hsl(0, 0%, 100%);
             font-family: "Fraunces", serif;
             font-size: 1.6rem;
             color: $black;
-            // margin: 10px 0;
             font-weight: 700;
             line-height: 1.8rem;
 
@@ -100,9 +99,9 @@ $white: hsl(0, 0%, 100%);
           .product_desc {
             font-family: "Poppins", serif;
             font-size: 0.8rem;
-            font-weight: 500;
+            font-weight: 400;
             color: $grey;
-            // margin-bottom: 20px;
+            line-height: 1.6rem;
 
             @media screen and (min-width: 768px) {
               & {
@@ -115,7 +114,6 @@ $white: hsl(0, 0%, 100%);
             display: flex;
             align-items: center;
             gap: 10px;
-            // margin-bottom: 20px;
 
             .current_price {
               font-family: "Fraunces", serif;
@@ -160,12 +158,6 @@ $white: hsl(0, 0%, 100%);
             &:hover {
               background-color: $green-700;
             }
-
-            // @media screen and (min-width: 768px) {
-            //   & {
-            //     font-size: 0.875rem;
-            //   }
-            // }
           }
         }
       }
