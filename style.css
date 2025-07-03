@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* body {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
+}
+* body .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: hsl(30, 38%, 92%);
+}
+* body .wrapper .card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 320px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  * body .wrapper .card {
+    max-width: 600px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+* body .wrapper .card .card_image {
+  background: #000;
+  height: 250px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  * body .wrapper .card .card_image {
+    height: auto;
+  }
+}
+* body .wrapper .card .card_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+* body .wrapper .card .card_content {
+  text-align: left;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media screen and (min-width: 768px) {
+  * body .wrapper .card .card_content {
+    padding: 0 30px;
+    gap: 20px;
+    justify-content: center;
+  }
+}
+* body .wrapper .card .card_content .product_type {
+  font-family: "Poppins", serif;
+  font-size: 0.8rem;
+  color: hsl(158, 36%, 37%);
+  letter-spacing: 4px;
+  text-align: left;
+}
+* body .wrapper .card .card_content .product_title {
+  font-family: "Fraunces", serif;
+  font-size: 1.6rem;
+  color: hsl(212, 21%, 14%);
+  font-weight: 700;
+  line-height: 1.8rem;
+}
+@media screen and (min-width: 768px) {
+  * body .wrapper .card .card_content .product_title {
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+  }
+}
+* body .wrapper .card .card_content .product_desc {
+  font-family: "Poppins", serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+}
+@media screen and (min-width: 768px) {
+  * body .wrapper .card .card_content .product_desc {
+    font-size: 0.875rem;
+  }
+}
+* body .wrapper .card .card_content .price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+* body .wrapper .card .card_content .price .current_price {
+  font-family: "Fraunces", serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+  margin-right: 8px;
+}
+@media screen and (min-width: 768px) {
+  * body .wrapper .card .card_content .price .current_price {
+    font-size: 1.9rem;
+  }
+}
+* body .wrapper .card .card_content .price .original_price {
+  font-family: "Poppins", serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+* body .wrapper .card .card_content .add_to_cart {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  padding: 12px 20px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Poppins", serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+* body .wrapper .card .card_content .add_to_cart:hover {
+  background-color: hsl(158, 42%, 18%);
+}
+
+/*# sourceMappingURL=style.css.map */

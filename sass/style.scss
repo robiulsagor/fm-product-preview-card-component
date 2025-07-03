@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+$green-500: hsl(158, 36%, 37%);
+$green-700: hsl(158, 42%, 18%);
+
+$black: hsl(212, 21%, 14%);
+$grey: hsl(228, 12%, 48%);
+$cream: hsl(30, 38%, 92%);
+$white: hsl(0, 0%, 100%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  body {
+    font-family: "Poppins", sans-serif;
+    font-size: .875rem;
+
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: $cream;
+
+      .card {
+        background-color: $white;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        width: 90%;
+        max-width: 320px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        overflow: hidden;
+
+        @media screen and (min-width: 768px) {
+          & {
+            max-width: 600px;
+            grid-template-columns: 1fr 1fr;
+          }
+        }
+
+        .card_image {
+          background: #000;
+          height: 250px;
+          width: 100%;
+
+          @media screen and (min-width: 768px) {
+            height: auto;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .card_content {
+          text-align: left;
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          @media screen and (min-width: 768px) {
+            & {
+              padding: 0 30px;
+              gap: 20px;
+              justify-content: center;
+            }
+          }
+
+          .product_type {
+            font-family: "Poppins", serif;
+            font-size: 0.8rem;
+            color: $green-500;
+            letter-spacing: 4px;
+            text-align: left;
+          }
+
+          .product_title {
+            font-family: "Fraunces", serif;
+            font-size: 1.6rem;
+            color: $black;
+            // margin: 10px 0;
+            font-weight: 700;
+            line-height: 1.8rem;
+
+            @media screen and (min-width: 768px) {
+              & {
+                font-size: 2.2rem;
+                line-height: 2.2rem;
+              }
+            }
+          }
+
+          .product_desc {
+            font-family: "Poppins", serif;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: $grey;
+            // margin-bottom: 20px;
+
+            @media screen and (min-width: 768px) {
+              & {
+                font-size: 0.875rem;
+              }
+            }
+          }
+
+          .price {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            // margin-bottom: 20px;
+
+            .current_price {
+              font-family: "Fraunces", serif;
+              font-size: 1.6rem;
+              font-weight: 700;
+              color: $green-500;
+              margin-right: 8px;
+
+              @media screen and (min-width: 768px) {
+                & {
+                  font-size: 1.9rem;
+                }
+              }
+            }
+
+            .original_price {
+              font-family: "Poppins", serif;
+              font-size: 0.8rem;
+              font-weight: 500;
+              color: $grey;
+              text-decoration: line-through;
+            }
+          }
+
+          .add_to_cart {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: $green-500;
+            color: $white;
+            padding: 12px 20px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: "Poppins", serif;
+            font-size: 0.875rem;
+            font-weight: 500;
+
+            &:hover {
+              background-color: $green-700;
+            }
+
+            // @media screen and (min-width: 768px) {
+            //   & {
+            //     font-size: 0.875rem;
+            //   }
+            // }
+          }
+        }
+      }
+    }
+  }
+}
